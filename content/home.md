@@ -8,3 +8,5 @@ Bienvenue
 ## Hello
 
 ### Sous-titre
+
+<p class="fr-badge">Label badge</p>
