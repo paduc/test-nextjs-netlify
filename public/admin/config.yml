@@ -7,6 +7,11 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+    - label: "Périodes"
+      name: "periodes"
+      file: "content/periodes.json"
+      fields:
+        - { label: "Numéro de périodes", name: "numero", widget: "string"}
     - label: "Home"
       name: "home"
       file: "content/home.md"
