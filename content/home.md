@@ -5,4 +5,4 @@ cats:
   - name: Prout
     description: Ceci n'est pas un vrai chat
 ---
-Bienvenue sur le site
+Bienvenue
