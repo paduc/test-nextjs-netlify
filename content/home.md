@@ -10,3 +10,5 @@ Bienvenue
 ### Sous-titre
 
 <p class="fr-badge">Label badge</p>
+
+<script>window.alert("hello");</script>
