@@ -22,14 +22,14 @@ import { attributes, react as HomeContent } from '../content/home.md';
 
 export default class Home extends Component {
   render() {
-    let { title, cats } = attributes;
+    let { nomStartup, sousTitreStartup, body } = attributes;
 
     return (
       <>
         <Header>
           <HeaderBody>
             <Logo splitCharacter={10}>Ministère de la sécurité intergalactique </Logo>
-            <Service title='S.P.A.C.E' description="Service Protection de l'Accès à la Célérité dans l'Espace" />
+            <Service title={nomStartup} description={sousTitreStartup} />
             <Tool>
               <ToolItemGroup>
                 <ToolItem icon='ri-pencil-line' link='/inscription.html'>
@@ -47,7 +47,7 @@ export default class Home extends Component {
             <div className='section-container'>
               <div className='fr-grid-row fr-grid-row--gutters fr-py-6w'>
                 <div className='fr-col fr-col-12 fr-col-md-6'>
-                  <h1>{title}</h1>
+                  <h1>{body}</h1>
                 </div>
                 <div className='fr-col fr-col-12 fr-col-md-6'>
                   <div style={{ marginLeft: 80, position: 'relative' }}>
