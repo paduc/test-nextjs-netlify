@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
@@ -7,15 +7,48 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: "Périodes"
-      name: "periodes"
-      file: "content/periodes.json"
+    - label: "Page d'accueil"
+      name: "landing"
+      file: "content/landing.md"
       fields:
-        - { label: "Numéro de périodes", name: "numero", widget: "string"}
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Nom de la startup", name: "nomStartup", widget: "string"}
-        - { label: "Sous titre de la startup", name: "sousTitreStartup", widget: "string"}
+        - { label: "République Française / Nom du ministère", name: "ministère", widget: "string", default: "République Française"}
+        - { label: "Nom du service", name: "nomService", widget: "string"}
+        - { label: "Sous titre du service", name: "sousTitreService", widget: "string", required: false}
+        - label: "Liens entête"
+          name: "liensEntête"
+          widget: "list"
+          required: false
+          summary: "{{fields.titre}}"
+          fields:
+            - label: "Titre"
+              name: "titre"
+              widget: "string"
+            - label: "Lien"
+              name: "url"
+              widget: "string"
+        - label: "Menu"
+          name: "menu"
+          widget: "list"
+          required: false
+          summary: "{{fields.titre}}"
+          fields:
+            - label: "Titre"
+              name: "titre"
+              widget: "string"
+            - label: "Lien"
+              name: "url"
+              widget: "string"
         - { label: "Corps", name: "body", widget: "markdown"}
+        - { label: "Description en pied de page", name: "descriptionFooter", widget: "markdown"}
+        - label: "Liens en pied de page"
+          name: "liensFooter"
+          widget: "list"
+          required: false
+          summary: "{{fields.titre}}"
+          fields:
+            - label: "Titre"
+              name: "titre"
+              widget: "string"
+            - label: "Lien"
+              name: "url"
+              widget: "string"
