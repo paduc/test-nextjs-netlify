@@ -9,7 +9,7 @@ collections:
     files:
     - label: "Page d'accueil"
       name: "landing"
-      file: "content/landing.md"
+      file: "content/landing.json"
       fields:
         - { label: "République Française / Nom du ministère", name: "ministère", widget: "string", default: "République Française"}
         - { label: "Nom du service", name: "nomService", widget: "string"}
