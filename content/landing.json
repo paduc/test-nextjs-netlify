@@ -1,1 +1,6 @@
-{}
+{
+  "ministère": "République\nFrançaise",
+  "nomService": "Nom du service",
+  "body": "Hello world",
+  "descriptionFooter": "Hello footer"
+}
