@@ -11,7 +11,7 @@ collections:
       name: "landing"
       file: "content/landing.json"
       fields:
-        - { label: "République Française / Nom du ministère", name: "ministère", widget: "string", default: "République Française"}
+        - { label: "République Française / Nom du ministère", name: "ministère", widget: "text", default: "République Française"}
         - { label: "Nom du service", name: "nomService", widget: "string"}
         - { label: "Sous titre du service", name: "sousTitreService", widget: "string", required: false}
         - label: "Liens entête"
